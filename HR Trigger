@@ -1,0 +1,18 @@
+USE [Viewpoint]
+GO
+/****** Object:  Trigger [dbo].[udSEMA_tHRRMi]    Script Date: 9/24/2018 12:16:48 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+/*--------------------------------------------------------------
+* Created By:	KVD 9/18/18
+* Modified By:	
+* 
+* Create User Profile, Reviewer and Reviewer Group when new Manager is created. 
+* Associate user profile with reviewer and associate reviewer with reviewer group.
+*--------------------------------------------------------------*/
+
+ALTER trigger [dbo].[udSEMA_tHRRMi] on [dbo].[bHRRM] FOR INSERT as 
+BEGIN
